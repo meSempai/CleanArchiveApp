@@ -6,6 +6,10 @@ import com.example.cleanarchive.domein.repositories.ContactRepository
 class DeleteContactUseCase(
     private val contactRepository: ContactRepository
 ) {
+
+    suspend fun execute(contactEntity: ContactEntity){
+    }
+
     suspend fun deleteContact(contactEntity: ContactEntity) {
         contactRepository.deleteContact(contactEntity)
     }

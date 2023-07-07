@@ -6,6 +6,10 @@ import com.example.cleanarchive.domein.repositories.ContactRepository
 class UpdateContactUseCase(
     private val contactRepository: ContactRepository
 ) {
+
+    suspend fun execute(contactEntity: ContactEntity){
+    }
+
     suspend fun updateContact(contactEntity: ContactEntity) {
         contactRepository.updateContact(contactEntity)
     }

@@ -13,7 +13,7 @@
         android:theme="@style/Theme.CleanArchiveApp"
         tools:targetApi="31">
         <activity
-            android:name="com.example.cleanarchive.MainActivity"
+            android:name="com.example.cleanarchive.presentation.ui.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

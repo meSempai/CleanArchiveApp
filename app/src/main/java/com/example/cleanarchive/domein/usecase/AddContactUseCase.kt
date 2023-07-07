@@ -7,6 +7,9 @@ class AddContactUseCase(
     private val contactRepository : ContactRepository
 ) {
 
+    fun execute(contactEntity: ContactEntity) {
+    }
+
     suspend fun addContact(contactEntity: ContactEntity) {
         contactRepository.addContact(contactEntity)
     }
